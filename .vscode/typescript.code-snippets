@@ -1,0 +1,53 @@
+{
+  "Styled component": {
+    "prefix": "muisc",
+    "body": [
+      "export const ${1:ComponentName} = styled('div')({",
+      "",
+      "});"
+    ],
+    "description": "Styled component",
+  },
+  "Styled component with import": {
+    "prefix": "muisci",
+    "body": [
+      "import { styled } from '@Utils/theme';",
+      "",
+      "export const ${1:ComponentName} = styled('div')({",
+      "",
+      "});"
+    ],
+    "description": "Styled component with import",
+  },
+  "Styled component with theme": {
+    "prefix": "muisct",
+    "body": [
+      "export const ${1:ComponentName} = styled('div')(({ theme }) => ({",
+      "",
+      "}));"
+    ],
+    "description": "Styled component with theme"
+  },
+  "Styled component with props": {
+    "prefix": "muiscp",
+    "body": [
+      "export const ${1:ComponentName} = styled('div', {",
+      "  shouldForwardProp: prop => prop !== '${2:propName}',",
+      "})<{ ${2:propName}?: boolean}>(({ ${2:propName} }) => ({",
+      "",
+      "}));"
+    ],
+    "description": "Styled component with props"
+  },
+  "Styled component with props and theme": {
+    "prefix": "muiscpt",
+    "body": [
+      "export const ${1:ComponentName} = styled('div', {",
+      "  shouldForwardProp: prop => prop !== '${2:propName}',",
+      "})<{ ${2:propName}?: boolean}>(({ ${2:propName}, theme }) => ({",
+      "",
+      "}));"
+    ],
+    "description": "Styled component with props and theme"
+  }
+}

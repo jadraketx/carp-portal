@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "allowJs": false,
+    "skipLibCheck": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ESNext",
+    "target": "ES6",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "paths": {
+      "@Assets/*": [
+        "src/assets/*"
+      ],
+      "@Components/*": [
+        "src/components/*"
+      ],
+      "@Modules/*": [
+        "src/components/modules/*"
+      ],
+      "@Utils/*": [
+        "src/utils/*"
+      ],
+    }
+  },
+  "include": [
+    "src",
+    ".eslintrc", 
+  ],
+  "exclude": ["**/node_modules", "**/.*/", "build"]
+}
