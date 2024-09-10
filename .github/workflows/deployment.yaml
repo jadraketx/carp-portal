@@ -51,6 +51,6 @@ jobs:
 
     - name: Docker build and push
       run: |
-        docker build -t cphcachet/carp-portal:${{ env.TAG }} .
-        docker push cphcachet/carp-portal:${{ env.TAG }}
+        docker build -t jad952/carp-portal:${{ env.TAG }} .
+        docker push jad952/carp-portal:${{ env.TAG }}
       
