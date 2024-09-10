@@ -54,14 +54,3 @@ jobs:
         docker build -t cphcachet/carp-portal:${{ env.TAG }} .
         docker push cphcachet/carp-portal:${{ env.TAG }}
       
-    - name: Microsoft Teams Deploy Card
-      if: always()
-      uses: toko-bifrost/ms-teams-deploy-card@master
-      with:
-        github-token: ${{ github.token }}
-        webhook-uri: ${{ secrets.TEAMS_WEBHOOK_URL }}
-        show-on-start: false
-        show-on-exit: true
-        envirnment: ${{ github.ref }}
-        card-layout-exit: cozy
-        timezone: Europe/Copenhagen
